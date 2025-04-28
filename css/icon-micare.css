@@ -1,0 +1,1131 @@
+@font-face {
+  font-family: 'micare';
+  src:  url('../fonts/micare.eot?gzlukr');
+  src:  url('../fonts/micare.eot?gzlukr#iefix') format('embedded-opentype'),
+    url('../fonts/micare.ttf?gzlukr') format('truetype'),
+    url('../fonts/micare.woff?gzlukr') format('woff'),
+    url('../fonts/micare.svg?gzlukr#micare') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-micare-"], [class*=" icon-micare-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'micare' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-micare-line:before {
+  content: "\e952";
+}
+.icon-micare-twitter:before {
+  content: "\e900";
+}
+.icon-micare-hours:before {
+  content: "\e901";
+}
+.icon-micare-ambulance:before {
+  content: "\e902";
+}
+.icon-micare-emergency:before {
+  content: "\e902";
+}
+.icon-micare-medical:before {
+  content: "\e902";
+}
+.icon-micare-vehicle:before {
+  content: "\e902";
+}
+.icon-micare-healthcare:before {
+  content: "\e902";
+}
+.icon-micare-ambulance1:before {
+  content: "\e903";
+}
+.icon-micare-Artboard-1:before {
+  content: "\e904";
+}
+.icon-micare-Artboard-2:before {
+  content: "\e905";
+}
+.icon-micare-Artboard-3:before {
+  content: "\e906";
+}
+.icon-micare-Artboard-4:before {
+  content: "\e907";
+}
+.icon-micare-Artboard-5:before {
+  content: "\e908";
+}
+.icon-micare-Artboard-6:before {
+  content: "\e909";
+}
+.icon-micare-Artboard-7:before {
+  content: "\e90a";
+}
+.icon-micare-Artboard-8:before {
+  content: "\e90b";
+}
+.icon-micare-Artboard-9:before {
+  content: "\e90c";
+}
+.icon-micare-artboard-1:before {
+  content: "\e90d";
+}
+.icon-micare-artboard-2:before {
+  content: "\e90e";
+}
+.icon-micare-artboard-33:before {
+  content: "\e90f";
+}
+.icon-micare-artboard-4:before {
+  content: "\e910";
+}
+.icon-micare-artboard-53:before {
+  content: "\e911";
+}
+.icon-micare-artboard-62:before {
+  content: "\e912";
+}
+.icon-micare-artboard-72:before {
+  content: "\e913";
+}
+.icon-micare-artboard-8:before {
+  content: "\e914";
+}
+.icon-micare-artboard-92:before {
+  content: "\e915";
+}
+.icon-micare-Asset-1:before {
+  content: "\e916";
+}
+.icon-micare-Asset-2:before {
+  content: "\e917";
+}
+.icon-micare-Asset-3:before {
+  content: "\e918";
+}
+.icon-micare-Asset-4:before {
+  content: "\e919";
+}
+.icon-micare-Asset-5:before {
+  content: "\e91a";
+}
+.icon-micare-Asset-6:before {
+  content: "\e91b";
+}
+.icon-micare-Asset-7:before {
+  content: "\e91c";
+}
+.icon-micare-Asset-8:before {
+  content: "\e91d";
+}
+.icon-micare-Asset-9:before {
+  content: "\e91e";
+}
+.icon-micare-Asset-10:before {
+  content: "\e91f";
+}
+.icon-micare-Asset-11:before {
+  content: "\e920";
+}
+.icon-micare-Asset-12:before {
+  content: "\e921";
+}
+.icon-micare-Asset-13:before {
+  content: "\e922";
+}
+.icon-micare-Asset-14:before {
+  content: "\e923";
+}
+.icon-micare-Asset-15:before {
+  content: "\e924";
+}
+.icon-micare-Asset-16:before {
+  content: "\e925";
+}
+.icon-micare-bandage:before {
+  content: "\e926";
+}
+.icon-micare-medical1:before {
+  content: "\e926";
+}
+.icon-micare-wound:before {
+  content: "\e926";
+}
+.icon-micare-care:before {
+  content: "\e926";
+}
+.icon-micare-healthcare1:before {
+  content: "\e926";
+}
+.icon-micare-bed:before {
+  content: "\e927";
+}
+.icon-micare-blood-plus-minus:before {
+  content: "\e928";
+}
+.icon-micare-blood-pressure:before {
+  content: "\e929";
+}
+.icon-micare-monitor:before {
+  content: "\e929";
+}
+.icon-micare-medical2:before {
+  content: "\e929";
+}
+.icon-micare-healthcare2:before {
+  content: "\e929";
+}
+.icon-micare-measurement:before {
+  content: "\e929";
+}
+.icon-micare-blood:before {
+  content: "\e92a";
+}
+.icon-micare-bottle:before {
+  content: "\e92b";
+}
+.icon-micare-medicine:before {
+  content: "\e92b";
+}
+.icon-micare-medical3:before {
+  content: "\e92b";
+}
+.icon-micare-prescription:before {
+  content: "\e92b";
+}
+.icon-micare-healthcare3:before {
+  content: "\e92b";
+}
+.icon-micare-chemistry-glass:before {
+  content: "\e92c";
+}
+.icon-micare-crutch:before {
+  content: "\e92d";
+}
+.icon-micare-medical4:before {
+  content: "\e92d";
+}
+.icon-micare-aid:before {
+  content: "\e92d";
+}
+.icon-micare-injury:before {
+  content: "\e92d";
+}
+.icon-micare-support:before {
+  content: "\e92d";
+}
+.icon-micare-dna:before {
+  content: "\e92e";
+}
+.icon-micare-doctor:before {
+  content: "\e92f";
+}
+.icon-micare-medical5:before {
+  content: "\e92f";
+}
+.icon-micare-healthcare4:before {
+  content: "\e92f";
+}
+.icon-micare-professional:before {
+  content: "\e92f";
+}
+.icon-micare-physician:before {
+  content: "\e92f";
+}
+.icon-micare-doctor1:before {
+  content: "\e930";
+}
+.icon-micare-esearch:before {
+  content: "\e931";
+}
+.icon-micare-medical6:before {
+  content: "\e931";
+}
+.icon-micare-healthcare5:before {
+  content: "\e931";
+}
+.icon-micare-lab:before {
+  content: "\e931";
+}
+.icon-micare-study:before {
+  content: "\e931";
+}
+.icon-micare-file:before {
+  content: "\e932";
+}
+.icon-micare-medical7:before {
+  content: "\e932";
+}
+.icon-micare-healthcare6:before {
+  content: "\e932";
+}
+.icon-micare-record:before {
+  content: "\e932";
+}
+.icon-micare-document:before {
+  content: "\e932";
+}
+.icon-micare-first-aid:before {
+  content: "\e933";
+}
+.icon-micare-kit:before {
+  content: "\e933";
+}
+.icon-micare-medical8:before {
+  content: "\e933";
+}
+.icon-micare-emergency1:before {
+  content: "\e933";
+}
+.icon-micare-healthcare7:before {
+  content: "\e933";
+}
+.icon-micare-hand-sanitizer-wash:before {
+  content: "\e934";
+}
+.icon-micare-hand-wash:before {
+  content: "\e935";
+}
+.icon-micare-health:before {
+  content: "\e936";
+}
+.icon-micare-insurance:before {
+  content: "\e936";
+}
+.icon-micare-medical9:before {
+  content: "\e936";
+}
+.icon-micare-policy:before {
+  content: "\e936";
+}
+.icon-micare-protection:before {
+  content: "\e936";
+}
+.icon-micare-heart-beat:before {
+  content: "\e937";
+}
+.icon-micare-heart-monitor:before {
+  content: "\e938";
+}
+.icon-micare-monitor1:before {
+  content: "\e938";
+}
+.icon-micare-medical10:before {
+  content: "\e938";
+}
+.icon-micare-healthcare8:before {
+  content: "\e938";
+}
+.icon-micare-cardiology:before {
+  content: "\e938";
+}
+.icon-micare-heart-monitor1:before {
+  content: "\e939";
+}
+.icon-micare-hospital-medical-bed:before {
+  content: "\e93a";
+}
+.icon-micare-hospital:before {
+  content: "\e93b";
+}
+.icon-micare-building:before {
+  content: "\e93b";
+}
+.icon-micare-medical11:before {
+  content: "\e93b";
+}
+.icon-micare-healthcare9:before {
+  content: "\e93b";
+}
+.icon-micare-treatment:before {
+  content: "\e93b";
+}
+.icon-micare-hospital1:before {
+  content: "\e93c";
+}
+.icon-micare-ID:before {
+  content: "\e93d";
+}
+.icon-micare-patient:before {
+  content: "\e93d";
+}
+.icon-micare-bracelet:before {
+  content: "\e93d";
+}
+.icon-micare-medical12:before {
+  content: "\e93d";
+}
+.icon-micare-identification:before {
+  content: "\e93d";
+}
+.icon-micare-infused-blood:before {
+  content: "\e93e";
+}
+.icon-micare-Line-01:before {
+  content: "\e93f";
+}
+.icon-micare-Line-02:before {
+  content: "\e940";
+}
+.icon-micare-Line-03:before {
+  content: "\e941";
+}
+.icon-micare-Line-04:before {
+  content: "\e942";
+}
+.icon-micare-Line-05:before {
+  content: "\e943";
+}
+.icon-micare-Line-06:before {
+  content: "\e944";
+}
+.icon-micare-Line-07:before {
+  content: "\e945";
+}
+.icon-micare-Line-08:before {
+  content: "\e946";
+}
+.icon-micare-Line-09:before {
+  content: "\e947";
+}
+.icon-micare-Line-10:before {
+  content: "\e948";
+}
+.icon-micare-Line-11:before {
+  content: "\e949";
+}
+.icon-micare-Line-12:before {
+  content: "\e94a";
+}
+.icon-micare-Line-13:before {
+  content: "\e94b";
+}
+.icon-micare-Line-14:before {
+  content: "\e94c";
+}
+.icon-micare-Line-15:before {
+  content: "\e94d";
+}
+.icon-micare-Line-16:before {
+  content: "\e94e";
+}
+.icon-micare-Line-17:before {
+  content: "\e94f";
+}
+.icon-micare-Line-18:before {
+  content: "\e950";
+}
+.icon-micare-Line-19:before {
+  content: "\e951";
+}
+.icon-micare-magnify:before {
+  content: "\e953";
+}
+.icon-micare-medical-bag:before {
+  content: "\e954";
+}
+.icon-micare-medical-chart:before {
+  content: "\e955";
+}
+.icon-micare-chart:before {
+  content: "\e955";
+}
+.icon-micare-patient1:before {
+  content: "\e955";
+}
+.icon-micare-healthcare10:before {
+  content: "\e955";
+}
+.icon-micare-record1:before {
+  content: "\e955";
+}
+.icon-micare-medical-document:before {
+  content: "\e956";
+}
+.icon-micare-medical-id-card:before {
+  content: "\e957";
+}
+.icon-micare-medical-report:before {
+  content: "\e958";
+}
+.icon-micare-medical13:before {
+  content: "\e958";
+}
+.icon-micare-report:before {
+  content: "\e958";
+}
+.icon-micare-document1:before {
+  content: "\e958";
+}
+.icon-micare-healthcare11:before {
+  content: "\e958";
+}
+.icon-micare-medical-report1:before {
+  content: "\e959";
+}
+.icon-micare-medicine-bottle:before {
+  content: "\e95a";
+}
+.icon-micare-medicine-bowl:before {
+  content: "\e95b";
+}
+.icon-micare-microscope:before {
+  content: "\e95c";
+}
+.icon-micare-MRI:before {
+  content: "\e95d";
+}
+.icon-micare-scanner:before {
+  content: "\e95d";
+}
+.icon-micare-medical14:before {
+  content: "\e95d";
+}
+.icon-micare-imaging:before {
+  content: "\e95d";
+}
+.icon-micare-healthcare12:before {
+  content: "\e95d";
+}
+.icon-micare-needle:before {
+  content: "\e95e";
+}
+.icon-micare-no-smoke:before {
+  content: "\e95f";
+}
+.icon-micare-nurse-man:before {
+  content: "\e960";
+}
+.icon-micare-nurse-woman:before {
+  content: "\e961";
+}
+.icon-micare-nurse:before {
+  content: "\e962";
+}
+.icon-micare-healthcare13:before {
+  content: "\e962";
+}
+.icon-micare-medical15:before {
+  content: "\e962";
+}
+.icon-micare-professional1:before {
+  content: "\e962";
+}
+.icon-micare-hospital2:before {
+  content: "\e962";
+}
+.icon-micare-people-sick:before {
+  content: "\e963";
+}
+.icon-micare-pharmacy:before {
+  content: "\e964";
+}
+.icon-micare-phone2:before {
+  content: "\e965";
+}
+.icon-micare-pill-tablet:before {
+  content: "\e966";
+}
+.icon-micare-pill:before {
+  content: "\e967";
+}
+.icon-micare-pills:before {
+  content: "\e968";
+}
+.icon-micare-medication:before {
+  content: "\e968";
+}
+.icon-micare-drugs:before {
+  content: "\e968";
+}
+.icon-micare-healthcare14:before {
+  content: "\e968";
+}
+.icon-micare-treatment1:before {
+  content: "\e968";
+}
+.icon-micare-pipette:before {
+  content: "\e969";
+}
+.icon-micare-plaster:before {
+  content: "\e96a";
+}
+.icon-micare-scale:before {
+  content: "\e96b";
+}
+.icon-micare-shield:before {
+  content: "\e96c";
+}
+.icon-micare-skull:before {
+  content: "\e96d";
+}
+.icon-micare-stethoscope1:before {
+  content: "\e96e";
+}
+.icon-micare-heart:before {
+  content: "\e96e";
+}
+.icon-micare-medical16:before {
+  content: "\e96e";
+}
+.icon-micare-healthcare15:before {
+  content: "\e96e";
+}
+.icon-micare-examination:before {
+  content: "\e96e";
+}
+.icon-micare-stethoscope2:before {
+  content: "\e96f";
+}
+.icon-micare-medical17:before {
+  content: "\e96f";
+}
+.icon-micare-doctor2:before {
+  content: "\e96f";
+}
+.icon-micare-healthcare16:before {
+  content: "\e96f";
+}
+.icon-micare-examination1:before {
+  content: "\e96f";
+}
+.icon-micare-stetoscope:before {
+  content: "\e970";
+}
+.icon-micare-surgical:before {
+  content: "\e971";
+}
+.icon-micare-instruments:before {
+  content: "\e971";
+}
+.icon-micare-medical18:before {
+  content: "\e971";
+}
+.icon-micare-surgery:before {
+  content: "\e971";
+}
+.icon-micare-tools:before {
+  content: "\e971";
+}
+.icon-micare-syringe:before {
+  content: "\e972";
+}
+.icon-micare-injection:before {
+  content: "\e972";
+}
+.icon-micare-medical19:before {
+  content: "\e972";
+}
+.icon-micare-healthcare17:before {
+  content: "\e972";
+}
+.icon-micare-vaccination:before {
+  content: "\e972";
+}
+.icon-micare-thermometer:before {
+  content: "\e973";
+}
+.icon-micare-medical20:before {
+  content: "\e973";
+}
+.icon-micare-temperature:before {
+  content: "\e973";
+}
+.icon-micare-healthcare18:before {
+  content: "\e973";
+}
+.icon-micare-fever:before {
+  content: "\e973";
+}
+.icon-micare-vaccine:before {
+  content: "\e974";
+}
+.icon-micare-medical21:before {
+  content: "\e974";
+}
+.icon-micare-healthcare19:before {
+  content: "\e974";
+}
+.icon-micare-immunization:before {
+  content: "\e974";
+}
+.icon-micare-protection1:before {
+  content: "\e974";
+}
+.icon-micare-water-bottle-glass:before {
+  content: "\e975";
+}
+.icon-micare-wheel-chair:before {
+  content: "\e976";
+}
+.icon-micare-address:before {
+  content: "\e977";
+}
+.icon-micare-angle-down:before {
+  content: "\e978";
+}
+.icon-micare-angles-left:before {
+  content: "\e979";
+}
+.icon-micare-angles-left1:before {
+  content: "\e97a";
+}
+.icon-micare-arrow-right:before {
+  content: "\e97b";
+}
+.icon-micare-atom-simple:before {
+  content: "\e97c";
+}
+.icon-micare-calendar-day:before {
+  content: "\e97d";
+}
+.icon-micare-chat:before {
+  content: "\e97e";
+}
+.icon-micare-check:before {
+  content: "\e97f";
+}
+.icon-micare-check1:before {
+  content: "\e980";
+}
+.icon-micare-chev-righ:before {
+  content: "\e981";
+}
+.icon-micare-chevron-left:before {
+  content: "\e982";
+}
+.icon-micare-chevron-right:before {
+  content: "\e983";
+}
+.icon-micare-clock:before {
+  content: "\e984";
+}
+.icon-micare-clock1:before {
+  content: "\e985";
+}
+.icon-micare-comments:before {
+  content: "\e986";
+}
+.icon-micare-contact:before {
+  content: "\e987";
+}
+.icon-micare-envelope-open:before {
+  content: "\e988";
+}
+.icon-micare-facebook:before {
+  content: "\e989";
+}
+.icon-micare-file-pdf:before {
+  content: "\e98a";
+}
+.icon-micare-file-word:before {
+  content: "\e98b";
+}
+.icon-micare-globe:before {
+  content: "\e98c";
+}
+.icon-micare-group:before {
+  content: "\e98d";
+}
+.icon-micare-headphones-simple:before {
+  content: "\e98e";
+}
+.icon-micare-house:before {
+  content: "\e98f";
+}
+.icon-micare-icon1:before {
+  content: "\e990";
+}
+.icon-micare-icon2:before {
+  content: "\e991";
+}
+.icon-micare-icon3:before {
+  content: "\e992";
+}
+.icon-micare-icon4:before {
+  content: "\e993";
+}
+.icon-micare-icon5:before {
+  content: "\e994";
+}
+.icon-micare-icon6:before {
+  content: "\e995";
+}
+.icon-micare-icon7:before {
+  content: "\e996";
+}
+.icon-micare-icon8:before {
+  content: "\e997";
+}
+.icon-micare-icon9:before {
+  content: "\e998";
+}
+.icon-micare-icon10:before {
+  content: "\e999";
+}
+.icon-micare-icon11:before {
+  content: "\e99a";
+}
+.icon-micare-icon12:before {
+  content: "\e99b";
+}
+.icon-micare-icon13:before {
+  content: "\e99c";
+}
+.icon-micare-icon14:before {
+  content: "\e99d";
+}
+.icon-micare-icon15:before {
+  content: "\e99e";
+}
+.icon-micare-icon16:before {
+  content: "\e99f";
+}
+.icon-micare-icon17:before {
+  content: "\e9a0";
+}
+.icon-micare-icon18:before {
+  content: "\e9a1";
+}
+.icon-micare-icon19:before {
+  content: "\e9a2";
+}
+.icon-micare-icon20:before {
+  content: "\e9a3";
+}
+.icon-micare-icon21:before {
+  content: "\e9a4";
+}
+.icon-micare-icon22:before {
+  content: "\e9a5";
+}
+.icon-micare-icon23:before {
+  content: "\e9a6";
+}
+.icon-micare-icon24:before {
+  content: "\e9a7";
+}
+.icon-micare-icon25:before {
+  content: "\e9a8";
+}
+.icon-micare-icon26:before {
+  content: "\e9a9";
+}
+.icon-micare-icon27:before {
+  content: "\e9aa";
+}
+.icon-micare-icon28:before {
+  content: "\e9ab";
+}
+.icon-micare-icon29:before {
+  content: "\e9ac";
+}
+.icon-micare-icon30:before {
+  content: "\e9ad";
+}
+.icon-micare-icon31:before {
+  content: "\e9ae";
+}
+.icon-micare-icon32:before {
+  content: "\e9af";
+}
+.icon-micare-icon33:before {
+  content: "\e9b0";
+}
+.icon-micare-icon34:before {
+  content: "\e9b1";
+}
+.icon-micare-icon35:before {
+  content: "\e9b2";
+}
+.icon-micare-icon36:before {
+  content: "\e9b3";
+}
+.icon-micare-icon37:before {
+  content: "\e9b4";
+}
+.icon-micare-icon38:before {
+  content: "\e9b5";
+}
+.icon-micare-icon39:before {
+  content: "\e9b6";
+}
+.icon-micare-icon40:before {
+  content: "\e9b7";
+}
+.icon-micare-icon41:before {
+  content: "\e9b8";
+}
+.icon-micare-icon42:before {
+  content: "\e9b9";
+}
+.icon-micare-icon43:before {
+  content: "\e9ba";
+}
+.icon-micare-icon44:before {
+  content: "\e9bb";
+}
+.icon-micare-icon45:before {
+  content: "\e9bc";
+}
+.icon-micare-icon46:before {
+  content: "\e9bd";
+}
+.icon-micare-icon47:before {
+  content: "\e9be";
+}
+.icon-micare-icon48:before {
+  content: "\e9bf";
+}
+.icon-micare-icon49:before {
+  content: "\e9c0";
+}
+.icon-micare-icon50:before {
+  content: "\e9c1";
+}
+.icon-micare-icon51:before {
+  content: "\e9c2";
+}
+.icon-micare-icon52:before {
+  content: "\e9c3";
+}
+.icon-micare-icon53:before {
+  content: "\e9c4";
+}
+.icon-micare-icon54:before {
+  content: "\e9c5";
+}
+.icon-micare-icon55:before {
+  content: "\e9c6";
+}
+.icon-micare-icon56:before {
+  content: "\e9c7";
+}
+.icon-micare-icon57:before {
+  content: "\e9c8";
+}
+.icon-micare-icon58:before {
+  content: "\e9c9";
+}
+.icon-micare-icon59:before {
+  content: "\e9ca";
+}
+.icon-micare-icon60:before {
+  content: "\e9cb";
+}
+.icon-micare-icon61:before {
+  content: "\e9cc";
+}
+.icon-micare-icon62:before {
+  content: "\e9cd";
+}
+.icon-micare-icon63:before {
+  content: "\e9ce";
+}
+.icon-micare-instagram:before {
+  content: "\e9cf";
+}
+.icon-micare-left:before {
+  content: "\e9d0";
+}
+.icon-micare-linkedin2:before {
+  content: "\e9d1";
+}
+.icon-micare-location-dot:before {
+  content: "\e9d2";
+}
+.icon-micare-mail:before {
+  content: "\e9d3";
+}
+.icon-micare-minus:before {
+  content: "\e9d4";
+}
+.icon-micare-phone:before {
+  content: "\e9d5";
+}
+.icon-micare-phone1:before {
+  content: "\e9d6";
+}
+.icon-micare-phone3:before {
+  content: "\e9d7";
+}
+.icon-micare-phone4:before {
+  content: "\e9d8";
+}
+.icon-micare-plus:before {
+  content: "\e9d9";
+}
+.icon-micare-right:before {
+  content: "\e9da";
+}
+.icon-micare-rocket-launch:before {
+  content: "\e9db";
+}
+.icon-micare-sach:before {
+  content: "\e9dc";
+}
+.icon-micare-search:before {
+  content: "\e9dd";
+}
+.icon-micare-star:before {
+  content: "\e9de";
+}
+.icon-micare-stethoscope:before {
+  content: "\e9df";
+}
+.icon-micare-suitcase:before {
+  content: "\e9e0";
+}
+.icon-micare-tag:before {
+  content: "\e9e1";
+}
+.icon-micare-twitter1:before {
+  content: "\e9e2";
+}
+.icon-micare-user:before {
+  content: "\e9e3";
+}
+.icon-micare-user-doctor:before {
+  content: "\e9e4";
+}
+.icon-micare-video:before {
+  content: "\e9e5";
+}
+.icon-micare-write:before {
+  content: "\e9e6";
+}
+.icon-micare-toggle-on:before {
+  content: "\e9e7";
+}
+.icon-micare-toggle-off:before {
+  content: "\e9e8";
+}
+.icon-micare-thumb-tack:before {
+  content: "\e9e9";
+}
+.icon-micare-digg:before {
+  content: "\e9ea";
+}
+.icon-micare-bitcoin:before {
+  content: "\e9eb";
+}
+.icon-micare-btc:before {
+  content: "\e9eb";
+}
+.icon-micare-slack:before {
+  content: "\e9ec";
+}
+.icon-micare-cross:before {
+  content: "\e9ed";
+}
+.icon-micare-cancel:before {
+  content: "\e9ed";
+}
+.icon-micare-close:before {
+  content: "\e9ed";
+}
+.icon-micare-quit:before {
+  content: "\e9ed";
+}
+.icon-micare-remove:before {
+  content: "\e9ed";
+}
+.icon-micare-skype:before {
+  content: "\e9ee";
+}
+.icon-micare-brand:before {
+  content: "\e9ee";
+}
+.icon-micare-social:before {
+  content: "\e9ee";
+}
+.icon-micare-youtube:before {
+  content: "\e9ef";
+}
+.icon-micare-brand1:before {
+  content: "\e9ef";
+}
+.icon-micare-social1:before {
+  content: "\e9ef";
+}
+.icon-micare-dribbble:before {
+  content: "\e9f0";
+}
+.icon-micare-brand2:before {
+  content: "\e9f0";
+}
+.icon-micare-social2:before {
+  content: "\e9f0";
+}
+.icon-micare-steam:before {
+  content: "\e9f1";
+}
+.icon-micare-brand3:before {
+  content: "\e9f1";
+}
+.icon-micare-social3:before {
+  content: "\e9f1";
+}
+.icon-micare-stackoverflow:before {
+  content: "\e9f2";
+}
+.icon-micare-brand4:before {
+  content: "\e9f2";
+}
+.icon-micare-social4:before {
+  content: "\e9f2";
+}
+.icon-micare-behance:before {
+  content: "\e9f3";
+}
+.icon-micare-brand5:before {
+  content: "\e9f3";
+}
+.icon-micare-social5:before {
+  content: "\e9f3";
+}
+.icon-micare-vimeo:before {
+  content: "\e9f4";
+}
+.icon-micare-brand6:before {
+  content: "\e9f4";
+}
+.icon-micare-social6:before {
+  content: "\e9f4";
+}
+.icon-micare-pinterest:before {
+  content: "\e9f5";
+}
+.icon-micare-brand7:before {
+  content: "\e9f5";
+}
+.icon-micare-social7:before {
+  content: "\e9f5";
+}
+.icon-micare-google-plus:before {
+  content: "\e9f6";
+}
+.icon-micare-brand8:before {
+  content: "\e9f6";
+}
+.icon-micare-social8:before {
+  content: "\e9f6";
+}
+.icon-micare-spotify:before {
+  content: "\e9f7";
+}
+.icon-micare-brand9:before {
+  content: "\e9f7";
+}
