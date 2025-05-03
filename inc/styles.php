@@ -755,7 +755,7 @@ function themesflat_custom_styles( $custom ) {
 	//GROUP HEADER
 	    $header_backgroundcolor = themesflat_get_opt( 'header_backgroundcolor');
 		if ( $header_backgroundcolor !='' ) {
-			$custom .= "#header.header-default, #header.header-style1, #header.header-style2, #header.header-style4, #header.header-style3 .header-ct-center, #header.header-style3 .header-ct-right, #header.header-style3:before,#header.header-01, #header.header-02 { background:" . esc_attr($header_backgroundcolor) . ";}"."\n";
+			$custom .= "#header.header-default, #header.header-style1, #header.header-style2, #header.header-style4, #header.header-style3 .header-ct-center, #header.header-style3 .header-ct-right, #header.header-style3:before,#header.header-01 { background:" . esc_attr($header_backgroundcolor) . ";}"."\n";
 		}
 
 		$header_background_bottom_color = themesflat_get_opt( 'header_background_bottom_color');

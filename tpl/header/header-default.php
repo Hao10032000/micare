@@ -34,7 +34,7 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
 }
 ?>
 <?php get_template_part( 'tpl/topbar'); ?>
-<header id="header" class="header header-default backdrop-filter<?php echo themesflat_get_opt_elementor('extra_classes_header'); ?>">
+<header id="header" class="header header-default <?php echo themesflat_get_opt_elementor('extra_classes_header'); ?>">
     <div class="inner-header">
         <div class="container-full">
             <div class="row">

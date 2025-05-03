@@ -27,22 +27,7 @@ $wp_customize->add_control( new themesflat_RadioImages($wp_customize,
                 'tooltip'   => esc_html__( 'Header 02','micare' ),
                 'src'       => THEMESFLAT_LINK . 'images/controls/header-02.jpg'
             ),
-            'header-03' => array (
-                'tooltip'   => esc_html__( 'Header 03','micare' ),
-                'src'       => THEMESFLAT_LINK . 'images/controls/header-03.jpg'
-            ),
-            'header-04' => array (
-                'tooltip'   => esc_html__( 'Header 04','micare' ),
-                'src'       => THEMESFLAT_LINK . 'images/controls/header-04.jpg'
-            ),
-            'header-05' => array (
-                'tooltip'   => esc_html__( 'Header 05','micare' ),
-                'src'       => THEMESFLAT_LINK . 'images/controls/header-05.jpg'
-            ),
-            'header-06' => array (
-                'tooltip'   => esc_html__( 'Header 06','micare' ),
-                'src'       => THEMESFLAT_LINK . 'images/controls/header-06.jpg'
-            ),
+            
         ),
     ))
 ); 

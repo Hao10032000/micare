@@ -8,18 +8,12 @@ $header_sidebar_toggler = themesflat_get_opt('header_sidebar_toggler');
 if (themesflat_get_opt_elementor('header_sidebar_toggler') != '') {
     $header_sidebar_toggler = themesflat_get_opt_elementor('header_sidebar_toggler');
 }
-
 $header_button = themesflat_get_opt('header_button');
 if (themesflat_get_opt_elementor('header_button') != '') {
     $header_button = themesflat_get_opt_elementor('header_button');
 }
 $header_button_text = themesflat_get_opt('header_button_text');
 $header_button_url = themesflat_get_opt('header_button_url');
-
-$social_header = themesflat_get_opt('social_header');
-if (themesflat_get_opt_elementor('social_header') != '') {
-    $social_header = themesflat_get_opt_elementor('social_header');
-}
 
 $topbar_address2 = themesflat_get_opt('topbar_address2');
 if (themesflat_get_opt_elementor('topbar_address2') != '') {
@@ -38,45 +32,11 @@ $social_topbar = themesflat_get_opt('social_topbar');
 if (themesflat_get_opt_elementor('social_topbar') != '') {
     $social_topbar = themesflat_get_opt_elementor('social_topbar');
 }
-$topbar = themesflat_get_opt('topbar_show');
-if (themesflat_get_opt_elementor('topbar_show') != '') {
-    $topbar = themesflat_get_opt_elementor('topbar_show');
-}
-
-
 ?>
-
-<?php if ( $topbar == 1 ) :?>
-<div class="themesflat-top style-01 style-02  style-03">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="container-inside">
-                    <div class="content-left">
-                        <?php get_template_part( 'tpl/header/brand'); ?>
-                    </div><!-- content-left -->
-                    <div class="content-right">
-                        <?php if( $topbar_address2 != '' ): ?>
-                        <div class="infor-topbar">
-                            <span class="list"><?php echo wp_kses_post($topbar_address2); ?></span>
-                            <span class="list"><?php echo wp_kses_post($topbar_address3); ?></span>
-                        </div>
-                        <?php endif; ?>
-                        <?php  
-                            if ( $social_topbar == 1 ):
-                                themesflat_render_social();    
-                            endif;
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- /.container -->
-</div><!-- /.topbar -->
-<?php endif; ?>
+<?php get_template_part( 'tpl/topbar'); ?>
 <header id="header" class="header header-02 <?php echo themesflat_get_opt_elementor('extra_classes_header'); ?>">
     <div class="inner-header">
-        <div class="container">
+        <div class="container-full">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header-wrap clearfix">
@@ -88,22 +48,30 @@ if (themesflat_get_opt_elementor('topbar_show') != '') {
                                 <?php get_template_part( 'tpl/header/navigator'); ?>
                             </div>
                         </div>
-                        <?php if(  $header_button == 1 || $header_search_box == 1 || $header_sidebar_toggler == 1): ?>
-                        <div class="header-ct-right">
-                          
+                        <?php if( $header_button == 1 || $header_search_box == 1 || $header_sidebar_toggler == 1): ?>
+                            <div class="header-ct-right">
+
                             <?php if ( $header_search_box == 1 ) :?>
-                            <div class="show-search">
-                                <a href="#"><i class="icon-micare-search"></i></a>
-                            </div>
+                                <div class="show-search">
+                                    <a href="#"><i class="icon-micare-search"></i></a>
+                                </div>
                             <?php endif;?>
+
+                            <?php if ( $header_button == 1 ) :?>
+                                <a class="tf-btn"
+                                href="<?php echo esc_url(themesflat_get_opt('header_button_url')) ?>">
+                                <span><?php echo wp_kses($header_button_text, themesflat_kses_allowed_html()); ?></span>
+                                <i class="icon-micare-arrow-right"></i></a>
+                            <?php endif;?>
+                           
                             <?php if ( $header_sidebar_toggler == 1 ) :?>
-                            <div class="header-modal-menu-left-btn">
+                                <div class="header-modal-menu-left-btn">
                                 <div class="modal-menu-left-btn">
                                     <i class="icon-micare-line"></i>
                                 </div>
-                            </div><!-- /.header-modal-menu-left-btn -->
+                                </div><!-- /.header-modal-menu-left-btn -->
                             <?php endif;?>
-                        </div>
+                            </div>
                         <?php endif; ?>
                         <div class="btn-menu">
                             <span class="line-1"></span>
@@ -121,7 +89,7 @@ if (themesflat_get_opt_elementor('topbar_show') != '') {
         <div class="inner-canvas-nav">
             <?php get_template_part( 'tpl/header/brand-mobile'); ?>
             <nav id="mainnav_canvas" class="mainnav_canvas" role="navigation">
-                <?php if ( themesflat_get_opt_elementor('onepage_menu') == 1 ) :?>
+            <?php if ( themesflat_get_opt_elementor('onepage_menu') == 1 ) :?>
                     <?php
                         wp_nav_menu( array( 'theme_location' => 'onepage', 'fallback_cb' => 'themesflat_menu_fallback', 'container' => false ) );
                     ?>
@@ -132,11 +100,11 @@ if (themesflat_get_opt_elementor('topbar_show') != '') {
                 <?php endif; ?>
             </nav><!-- #mainnav_canvas -->
             <?php if( $topbar_address2 != '' ): ?>
-            <div class="infor-topbar">
-            <span class="list"><?php echo wp_kses_post($topbar_address2); ?></span>
+                <div class="infor-topbar">
+                <span class="list"><?php echo wp_kses_post($topbar_address2); ?></span>
                 <span class="list"><?php echo wp_kses_post($topbar_address3); ?></span>
                 <span class="list"><?php echo wp_kses_post($topbar_address4); ?></span>
-            </div>
+                </div>
             <?php endif; ?>
             <?php if ( $social_topbar == 1 ):
                 themesflat_render_social();    
@@ -144,4 +112,5 @@ if (themesflat_get_opt_elementor('topbar_show') != '') {
             ?>
         </div>
     </div><!-- /.canvas-nav-wrap -->
+
 </header><!-- /.header -->

@@ -1103,12 +1103,50 @@ ul.wp-block-rss li {
 }
 
 #header.header-default .header-wrap {
-    padding: 3px 5px 3px 38px;
+    padding: 3px 0px;
     border: 1px solid #EEEFEF;
     border-radius: 15px;
     box-shadow: 10px 4px 60px 0px rgba(217, 217, 217, 0.25);
 }
-
+#header.header-default.header-01 .header-wrap,
+#header.header-default.header-02 .header-wrap {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: unset;
+}
+#header.header-01 {
+    border-top: 1px solid #EEEFEF;
+}
+#header.header-01 .tf-btn {
+    background-color: #4B168C;
+}
+#header.header-02 .tf-btn {
+    background-color: #EFD813;
+    color: var(--theme-primary-color);
+}
+#header.header-02 {
+   background-color: transparent;
+   padding: 18px 25px;
+}
+#header.header-02 .header-wrap .header-ct-right .header-modal-menu-left-btn i {
+    background-color: #FFFFFF;
+    padding: 18px 13px;
+    border-radius: 100px;
+}
+#header.header-02 .header-modal-menu-left-btn {
+    margin-left: 10px;
+}
+#header.header-02 .header-wrap .header-ct-center {
+    padding-left: 99px;
+    padding-right: 2%;
+    justify-content: flex-start;
+}
+.class-name-page-dental-clinic .themesflat-boxed {
+    padding: 9px 10px;
+}
+.class-name-page-dental-clinic.header-absolute .header-boxed {
+    left: 0;
+}
 #header.header-default.header-box-sticky .header-wrap {
     padding: 0;
     border: 1px solid transparent;
@@ -1453,10 +1491,19 @@ header .flat-information li a {
 .header-01 #mainnav>ul>li>a {
     color: var(--theme-primary-color);
 }
-
-#header.header-01 .header-wrap .header-ct-right .header-modal-menu-left-btn i,
-#header.header-01 .header-wrap .header-ct-right .show-search i {
-    color: var(--theme-primary-color);
+.header-01 #mainnav>ul>li>a:hover {
+    color: #4B168C;
+}
+#header.header-01 .header-wrap .header-ct-right .header-modal-menu-left-btn i{
+    color: #4B168C;
+    background-color: transparent;
+    padding: 0;
+}
+#header.header-01 .header-wrap .header-ct-right .header-modal-menu-left-btn:hover i{
+    background-color: transparent;
+}
+#header.header-01 .header-modal-menu-left-btn {
+    margin-left: 30px;
 }
 
 #header.header-sticky .header-wrap .header-ct-right .header-modal-menu-left-btn i,
@@ -1474,10 +1521,6 @@ header .flat-information li a {
 #header.header-04.header-sticky .phone-info .icon {
     background: var(--theme-secondary-color);
     color: #F3F5F5;
-}
-
-.header-01 #mainnav>ul>li>a:hover {
-    color: #317C6F;
 }
 
 #header .phone-info {
@@ -1667,34 +1710,12 @@ header .flat-information li a {
     background-color: var(--theme-accent-color);
 }
 
-#header.header-02 .header-wrap .header-ct-right .header-modal-menu-left-btn i,
-#header.header-02 .header-wrap .header-ct-right .show-search i {
+#header.header-02 .header-wrap .header-ct-right .header-modal-menu-left-btn i {
     color: var(--theme-primary-color);
 }
-
-#header.header-02 .header-wrap .header-ct-left {
-    display: none;
-    transition: all 0.3s ease-in-out;
+#header.header-02 .header-wrap .header-ct-right .show-search i {
+    color: #fff;
 }
-
-#header.header-02.header-sticky .header-wrap .header-ct-left {
-    display: block;
-}
-
-#header.header-02.header-sticky .header-wrap .header-ct-center {
-    padding-left: 40px;
-}
-
-#header.header-02 .header-wrap .header-ct-center {
-    padding-left: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-/* #header .header-wrap .header-ct-right .tf-btn {
-    margin-left: 20px;
-    margin-right: 20px;
-
-} */
 
 
 #header .header-wrap .header-ct-right .phone-header-box h3 {
@@ -1724,48 +1745,6 @@ header .flat-information li a {
     margin-right: 12px
 }
 
-/* #mainnav>ul>li>a::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: var(--theme-secondary-color);
-    top: 66px;
-    left: auto;
-    right: 0;
-    width: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#mainnav>ul>li:hover a::before,
-#mainnav>ul>li.current-menu-ancestor>a::before,
-#mainnav>ul>li.current-menu-item>a::before,
-#mainnav>ul>li.current-menu-parent>a::before {
-    width: 100%;
-    left: 0;
-} */
-
-.header-02 #mainnav>ul>li>a {
-    line-height: 76px;
-}
-
-.header-02 #mainnav>ul>li>a::before {
-    top: 50px;
-
-}
-
-.header-02 .btn-menu:after,
-.header-02 .btn-menu:before,
-.header-02 .btn-menu span {
-    background-color: var(--theme-primary-color) !important;
-}
-
-#header.header-sticky.header-02 #mainnav>ul>li>a {
-    line-height: 76px !important;
-}
 
 #header .header-info-item .content .title {
     font-weight: 400;
@@ -1852,214 +1831,6 @@ header .flat-information li a {
     margin-left: -5px;
 }
 
-.themesflat-top.style-02 .content-right .themesflat-socials li a {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 99px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    line-height: 43px;
-    text-align: center;
-}
-
-.themesflat-top.style-02 .themesflat-socials li {
-    padding: 0 2px;
-}
-
-.themesflat-top.style-03 {
-    padding-top: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 16px;
-}
-
-.themesflat-top.style-03 #logo a img,
-.themesflat-top.style-04 #logo a img {
-    max-width: 169px;
-    height: auto;
-}
-
-.themesflat-top.style-03 #logo a .site-logo-fixed,
-.themesflat-top.style-04 #logo a .site-logo-fixed {
-    display: none;
-}
-
-.themesflat-top.style-03 .infor-topbar {
-    display: flex;
-    align-items: center;
-}
-
-.themesflat-top.style-03 .content-right .list i {
-    width: unset;
-    height: unset;
-    background: transparent;
-    line-height: unset;
-}
-
-.themesflat-top.style-03 .content-right .list {
-    padding-right: 0px;
-    border-right: 1px solid transparent;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.themesflat-top.style-03 .content-right .themesflat-socials {
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.themesflat-top.style-04 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-#header.header-03 {
-    backdrop-filter: blur(10px);
-}
-
-#header.header-03 .container-megamenu .sub-menu {
-    left: -350px;
-}
-
-#header.header-06 .container-megamenu .sub-menu {
-    left: -280px;
-}
-
-#header.header-03 .header-ct-left .logo {
-    display: none;
-}
-
-#header.header-03 .phone-info {
-    padding: 0px 0px;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-}
-
-#header.header-03.header-sticky .phone-info {
-    display: none;
-}
-
-
-#header.header-03 .phone-info .icon,
-#header.header-04 .phone-info .icon {
-    background: #ffffff0a;
-    color: #fff;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-#header.header-03 .phone-info .label-phone,
-#header.header-03 .phone-info .number-phone,
-#header.header-04 .phone-info .label-phone,
-#header.header-04 .phone-info .number-phone {
-    color: #fff;
-}
-
-#header.header-03 .header-wrap .header-ct-center {
-    padding-left: 0px;
-    justify-content: flex-end;
-}
-
-#header.header-03 #mainnav>ul>li>a {
-    line-height: 74px;
-}
-
-#header.header-03.header-sticky #mainnav>ul>li>a,
-#header.header-05.header-sticky #mainnav>ul>li>a {
-    line-height: 74px !important;
-}
-
-
-#header.header-04 {
-    padding: 0px 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-#header.header-04 #mainnav>ul>li>a:hover {
-    color: var(--theme-secondary-color);
-}
-
-#header.header-04 .header-wrap .header-ct-center,
-#header.header-05 .header-wrap .header-ct-center {
-    padding-left: 65px;
-}
-
-#header.header-04 .header-ct-right .show-search,
-#header.header-05 .header-ct-right .show-search {
-    margin-left: 20px;
-}
-
-#header.header-04 .phone-info {
-    height: auto;
-    padding: 0px 38px;
-    margin-right: 19px;
-    border-left: 1px solid transparent !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-#header.header-05 .phone-info {
-    height: auto;
-    padding: 0px 38px;
-    margin-right: 19px;
-    border-left: 1px solid transparent !important;
-    border-right: 1px solid rgba(228, 228, 228, 1);
-}
-
-#header.header-05.header-sticky .header-wrap {
-    background: transparent;
-    border-radius: 0px;
-    padding: 0px 0px;
-    margin-top: 0px;
-}
-
-
-
-#header.header-05 .header-wrap .header-ct-right .tf-btn {
-    margin-right: 10px;
-}
-
-#header.header-05 .header-wrap {
-    background: #fff;
-    border-radius: 99px;
-    padding: 0px 40px;
-    margin-top: 20px;
-}
-
-#header.header-05 #mainnav>ul>li>a,
-#header.header-05 .show-search a,
-#header.header-05 .header-wrap .header-ct-right .header-modal-menu-left-btn i,
-#header.header-05 .header-wrap .header-ct-right .show-search i,
-#header.header-06 #mainnav>ul>li>a,
-#header.header-06 .show-search a,
-#header.header-06 .header-wrap .header-ct-right .header-modal-menu-left-btn i,
-#header.header-06 .header-wrap .header-ct-right .show-search i {
-    color: var(--theme-primary-color);
-}
-
-#header.header-06 .header-wrap .header-ct-right .tf-btn {
-    margin-left: 20px;
-}
-
-#header.header-05 .header-wrap .header-ct-right .tf-btn,
-#header.header-06 .header-wrap .header-ct-right .tf-btn {
-    background-color: var(--theme-primary-color);
-    color: #fff;
-}
-
-#header.header-05 .header-wrap .header-ct-right .tf-btn span,
-#header.header-06 .header-wrap .header-ct-right .tf-btn span {
-    color: #fff;
-}
-
-#header.header-05 .header-wrap .header-ct-right .tf-btn:hover::after,
-#header.header-06 .header-wrap .header-ct-right .tf-btn:hover::after {
-    background-color: var(--theme-secondary-color);
-}
-
-#header.header-05 #mainnav>ul>li>a {
-    line-height: 74px;
-}
-
 .header-modal-menu-left-btn .modal-menu-left-btn .line,
 .themesflat-button:hover,
 button:hover {
@@ -2071,14 +1842,9 @@ button:hover {
 }
 
 
-.header-02 .themesflat-top.style-01 a:hover,
-article .post-meta .item-meta a:hover {
-    color: var(--theme-secondary-color) !important
-}
-
 
 .header-02 #mainnav>ul>li>a {
-    color: var(--theme-primary-color)
+    color: #fff
 }
 
 
@@ -6667,7 +6433,7 @@ footer .widget.widget_latest_news li {
     right: 0;
 }
 
-.overlay-footer {
+/* .overlay-footer {
     position: absolute;
     top: 0;
     right: 0;
@@ -6675,7 +6441,7 @@ footer .widget.widget_latest_news li {
     left: 0;
     background-position: center bottom;
     background-repeat: no-repeat
-}
+} */
 
 #footer,
 .bottom,

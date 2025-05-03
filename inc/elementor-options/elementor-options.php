@@ -61,10 +61,6 @@ class themesflat_options_elementor {
                     'header-default' => esc_html__( 'Header Default', 'micare'),
                     'header-01' => esc_html__( 'Header 01', 'micare'),
                     'header-02' => esc_html__( 'Header 02', 'micare'),
-                    'header-03' => esc_html__( 'Header 03', 'micare'),
-                    'header-04' => esc_html__( 'Header 04', 'micare'),
-                    'header-05' => esc_html__( 'Header 05', 'micare'),
-                    'header-06' => esc_html__( 'Header 06', 'micare'),
                 ],
             ]
         );
@@ -903,7 +899,7 @@ class themesflat_options_elementor {
                     'block'      => esc_html__( 'No', 'micare'),
                 ],
                 'selectors'  => [
-                    '{{WRAPPER}} .page-title' => 'display: {{VALUE}};',
+                    '{{WRAPPER}} .page-header' => 'display: {{VALUE}};',
                 ],
             ]
         ); 
