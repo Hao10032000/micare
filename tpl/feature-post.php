@@ -48,7 +48,7 @@ switch ( get_post_format() ) {
 			<div class="video-video-box-overlay">
 				<div class="video-video-box-button-sm video-box-button-lg">					
 					<a href="'.esc_url($video).'" class="btn-video video-video-play-icon">
-						<i class="icon-micare-Play"></i>
+						<i class="icon-micare-video"></i>
 					</a>
 				</div>					
 			</div>';

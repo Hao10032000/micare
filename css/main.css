@@ -10095,7 +10095,7 @@ button:hover {
 .btn-video::before {
     all: unset;
     display: block;
-    content: "\e92f";
+    content: "\e9e5";
     font-family: micare;
     width: 60px;
     height: 60px;

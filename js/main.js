@@ -290,8 +290,8 @@
             margin: 50,
             nav: s,
             navText: [
-              '<i class="icon-micare-arrow-right"></i>',
-              '<i class="icon-micare-Right"></i>',
+              '<i class="icon-micare-left"></i>',
+              '<i class="icon-micare-right"></i>',
             ],
             autoplay: false,
             autoplayHoverPause: !0,
