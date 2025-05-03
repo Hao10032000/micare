@@ -11540,3 +11540,7 @@ button:hover {
 .custom-siderbar .address .icon-micare-grow1 {
     font-size: 18px;
 }
+.footer .wrap-widgets-1 #block-20 .wp-block-group__inner-container {
+    display: inline-flex;
+    gap: 85px;
+}
