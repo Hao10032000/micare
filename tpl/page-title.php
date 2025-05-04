@@ -26,10 +26,6 @@ $post_id = $post->ID;
 ?>
 <header class="page-header">
 
-    <?php if ( is_singular( 'post' ) && isset( $post ) && $style_blog_single == 'content-single' ) {
-        get_template_part( 'tpl/feature-post-single');
-    } ?>
-
     <div
         class="page-title <?php echo esc_attr($page_title_styles); ?> <?php echo esc_attr($page_title_alignment); ?> <?php echo themesflat_get_opt_elementor('extra_classes_pagetitle'); ?>">
 
@@ -42,16 +38,19 @@ $post_id = $post->ID;
         <div class="container-full">
             <div class="row">
                 <div class="page-title-container">
-                    <?php 
-                    if ( themesflat_get_opt( 'breadcrumb_enabled' ) == 1 ):
-                        themesflat_breadcrumb();
-                    endif;                       
-                ?>
+
 
 <?php                 
                     if ( themesflat_get_opt('page_title_heading_enabled') == 1 ) {
                         echo sprintf('<h1 class="page-title-heading">%s</h1>', $title); 
                     }  
+                ?>
+
+
+<?php 
+                    if ( themesflat_get_opt( 'breadcrumb_enabled' ) == 1 ):
+                        themesflat_breadcrumb();
+                    endif;                       
                 ?>
                    
                     <?php if(!empty($bread_crumb_description)): ?>
