@@ -996,7 +996,7 @@ function themesflat_social_single() {
         $value = themesflat_get_json('social_links');
         $sharelink = themesflat_available_social_icons();
         ?>
-        <div class="social-share-article"><h5><?php echo esc_html__( 'Share this post:', 'micare' ); ?></h5>        
+        <div class="social-share-article"><h5><?php echo esc_html__( 'Share', 'micare' ); ?></h5>        
             <ul class="themesflat-socials">
                 <?php
                     foreach ( $value as $key => $val ) {
