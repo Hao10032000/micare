@@ -68,13 +68,13 @@ function themesflat_entry_footer() {
 	}
 
 	?>
-	<div class="entry-footer">
-		<?php 
+<div class="entry-footer">
+    <?php 
 			printf($tags_links); 
 			themesflat_social_single();
 		?>
-	</div>
-	<?php
+</div>
+<?php
 
 }
 endif;
@@ -89,10 +89,10 @@ function themesflat_post_navigation() {
 		return;
 	}
 	?>
-	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'micare' ); ?></h2>
-		<ul class="nav-links clearfix">
-			<?php
+<nav class="navigation posts-navigation" role="navigation">
+    <h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'micare' ); ?></h2>
+    <ul class="nav-links">
+        <?php
 			if ( is_attachment() ) :
 
 				$prevPost = get_adjacent_post( false, '', true);
@@ -112,12 +112,12 @@ function themesflat_post_navigation() {
 				$prevPost = get_adjacent_post( false, '', true);
 				if( is_object( $prevPost ) ){
 					$prev_title = get_the_title($prevPost->ID);
-					$prev = esc_html__( 'Previous', 'micare' );
+					$prev = esc_html__( '', 'micare' );
 					$date = get_the_date();
 
 					echo '<li class="post-navigation previous-post">';
 						echo '<div class="content">';
-							previous_post_link('<div class="post-button prev-button">%link</div>', $prev); 
+							previous_post_link('<div class="post-button prev-button"><i class="icon-micare-chevron-left"></i>%link</div>', $prev); 
 							previous_post_link('<div class="title-post">%link</div>', $prev_title); 
 						echo '</div>';
 					echo '</li>';
@@ -126,11 +126,11 @@ function themesflat_post_navigation() {
 				$nextPost = get_adjacent_post( false, '', false);
 				if( is_object( $nextPost ) ){
 					$next_title = get_the_title($nextPost->ID);
-					$next = esc_html__( 'next post', 'micare' );
+					$next = esc_html__( '', 'micare' );
 					$date = get_the_date();
 					echo '<li class="post-navigation next-post">';
 						echo '<div class="content">';
-						next_post_link('<div class="post-button next-button">%link</div>', $next); 
+						    next_post_link('<div class="post-button next-button"><i class="icon-micare-chevron-right"></i>%link</div>', $next); 
 							next_post_link('<div class="title-post">%link</div>', $next_title); 
 						echo '</div>';
 					echo '</li>';
@@ -138,8 +138,8 @@ function themesflat_post_navigation() {
 				
 			endif;
 			?>
-		</ul><!-- .nav-links --> 
-	</nav><!-- .navigation -->
-	<?php
+    </ul><!-- .nav-links -->
+</nav><!-- .navigation -->
+<?php
 }
 endif;
