@@ -70,37 +70,6 @@ if ( ! function_exists( 'themesflat_body_classes' ) ) {
 			$classes[] = 'class-name-page-'.$slug;
 		}
 
-		/**
-		 * No Sidebar
-		 */
-		$sidebar = themesflat_get_opt( 'blog_sidebar_list' );
-		switch ($sidebar) {
-	        case 'blog-sidebar':
-	        	if ( ! is_active_sidebar( 'blog-sidebar' ) ) {
-					$classes[] = 'no-sidebar';
-				}
-	            break;
-	        case 'footer-1':
-	        	if ( ! is_active_sidebar( 'footer-1' ) ) {
-					$classes[] = 'no-sidebar';
-				}
-	            break;
-	        case 'footer-2':
-	        	if ( ! is_active_sidebar( 'footer-2' ) ) {
-					$classes[] = 'no-sidebar';
-				}
-	            break;
-            case 'footer-3':
-	        	if ( ! is_active_sidebar( 'footer-3' ) ) {
-					$classes[] = 'no-sidebar';
-				}
-	            break;
-            case 'footer-4':
-	        	if ( ! is_active_sidebar( 'footer-4' ) ) {
-					$classes[] = 'no-sidebar';
-				}
-	            break;
-	    }
 
 		return $classes;
 	}
