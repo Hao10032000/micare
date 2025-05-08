@@ -1702,8 +1702,21 @@ header .flat-information li a {
   display: inline-block;
 }
 
-.tf-button2 i {
-  margin-left: 9px;
+.tf-button2.tf-btn {
+  background-color: var(--theme-secondary-color);
+  padding: 17px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+
+}
+.tf-button2.tf-btn:hover {
+  background-color: #0B55E5;
+
+}
+.tf-button2.tf-btn i {
+  font-size: 20px;
 }
 
 .wrap-tf-button2 {
