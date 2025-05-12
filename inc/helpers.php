@@ -323,8 +323,8 @@ function themesflat_blog_layout() {
         case 'post':
             $layout = themesflat_get_opt('sidebar_layout');
             break;
-        case 'case-study':
-            $layout = themesflat_get_opt('case_study_layout');
+        case 'portfolio':
+            $layout = themesflat_get_opt('portfolio_layout');
             break;
         case 'services':
             $layout = themesflat_get_opt('services_layout');
