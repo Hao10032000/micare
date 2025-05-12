@@ -914,8 +914,8 @@ function themesflat_change_post_types_slug( $args, $post_type ) {
    if ( 'services' === $post_type ) {
       $args['rewrite']['slug'] = themesflat_get_opt('services_slug');
    }
-   if ( 'therapists' === $post_type ) {
-      $args['rewrite']['slug'] = themesflat_get_opt('therapists_slug');
+   if ( 'portfolio' === $post_type ) {
+      $args['rewrite']['slug'] = themesflat_get_opt('portfolio_slug');
    }
    return $args;
 }
@@ -935,8 +935,8 @@ function themesflat_change_archive_titles($orig_title) {
             'title' => themesflat_get_opt('services_name')
         ),
         array(
-            'post_type' => 'therapists', 
-            'title' => themesflat_get_opt('therapists_name')
+            'post_type' => 'portfolio', 
+            'title' => themesflat_get_opt('portfolio_name')
         ),
     );
 
@@ -1053,8 +1053,8 @@ function themesflat_get_page_titles() {
                 $title = themesflat_get_opt('blog_featured_title');
             } elseif(is_single() && get_post_type() == 'services' && themesflat_get_opt('services_featured_title') != ''){                
                 $title = themesflat_get_opt('services_featured_title');
-            } elseif(is_single() && get_post_type() == 'therapists' && themesflat_get_opt('therapists_featured_title') != ''){                
-                $title = themesflat_get_opt('therapists_featured_title');
+            } elseif(is_single() && get_post_type() == 'portfolio' && themesflat_get_opt('portfolio_featured_title') != ''){                
+                $title = themesflat_get_opt('portfolio_featured_title');
             } elseif(is_single() && get_post_type() == 'product' && themesflat_get_opt('product_featured_title') != ''){
                 $title = themesflat_get_opt('product_featured_title');
             }
@@ -1077,10 +1077,10 @@ function themesflat_get_page_titles() {
             if (themesflat_get_opt('services_name') != '') {
                 $title = themesflat_get_opt('services_name');
             }                      
-        } elseif ( is_post_type_archive('therapists') ) {
+        } elseif ( is_post_type_archive('portfolio') ) {
             $title = post_type_archive_title('', false);
-            if (themesflat_get_opt('therapists_name') != '') {
-                $title = themesflat_get_opt('therapists_name');
+            if (themesflat_get_opt('portfolio_name') != '') {
+                $title = themesflat_get_opt('portfolio_name');
             }                      
         } elseif ( is_post_type_archive('emsb_service') ) {
             $title = esc_html__('Book Appointment','micare');           
