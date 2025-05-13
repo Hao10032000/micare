@@ -1709,11 +1709,9 @@ header .flat-information li a {
   font-weight: 700;
   line-height: 22px;
   color: #fff;
-
 }
 .tf-button2.tf-btn:hover {
-  background-color: #0B55E5;
-
+  background-color: #0b55e5;
 }
 .tf-button2.tf-btn i {
   font-size: 20px;
@@ -3972,7 +3970,7 @@ article .featured-post .post-meta {
   margin-bottom: 40px;
 }
 .blog .featured-post .post-date,
-.blog-archive .post-date{
+.blog-archive .post-date {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -4501,17 +4499,16 @@ footer .widget.widget_rss ul ul li:first-child {
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
-  content: '\e98d';
+  content: "\e98d";
   color: var(--theme-secondary-color);
-  font-family: 'micare';
+  font-family: "micare";
   position: absolute;
   width: 60px;
   height: 60px;
   text-align: center;
   line-height: 60px;
-  border: 1px solid #EEEFEF;
+  border: 1px solid #eeefef;
   border-radius: 100px;
-
 }
 
 .nav-links .previous-post {
@@ -4792,7 +4789,7 @@ footer .widget.widget_rss ul ul li:first-child {
 #comments #respond {
   border-radius: 10px;
   padding: 40px 55px 40px 50px;
-  background: #EEF0F2;
+  background: #eef0f2;
 }
 
 .comment-reply-link {
@@ -4832,7 +4829,7 @@ footer .widget.widget_rss ul ul li:first-child {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #666B68;
+  color: #666b68;
   margin-bottom: 12px;
   margin-top: 14px;
 }
@@ -4861,7 +4858,7 @@ footer .widget.widget_rss ul ul li:first-child {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #666B68;
+  color: #666b68;
 }
 
 .comments-area ol.comment-list article .comment_content .comment_time i {
@@ -4916,7 +4913,7 @@ footer .widget.widget_rss ul ul li:first-child {
   font-size: 16px;
   line-height: 26px;
   border-radius: 7px;
-  color: #666B68 !important;
+  color: #666b68 !important;
   background: #fff;
 }
 
@@ -10871,67 +10868,6 @@ button:hover {
   border-bottom: 1px solid #e4e4e4;
 }
 
-.form-tf-micare input,
-.form-tf-micare select,
-.form-tf-micare textarea {
-  width: 100%;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--theme-primary-color);
-  padding: 13.5px 16px;
-  border: 1px solid #e4e4e4;
-  border-radius: 4px;
-  background: #fff;
-}
-
-.form-tf-micare input::placeholder,
-.form-tf-micare select::placeholder,
-.form-tf-micare textarea::placeholder {
-  color: #abb0b4;
-}
-
-.form-tf-micare .select-form {
-  position: relative;
-}
-
-.form-tf-micare .select-form::before {
-  position: absolute;
-  right: 20px;
-  top: 12px;
-  content: "\e926";
-  font-family: "micare";
-  z-index: 2;
-  font-size: 14px;
-  color: var(--theme-primary-color);
-}
-
-.form-tf-micare textarea {
-  height: 86px;
-}
-
-.btn-submit {
-  background-color: var(--theme-secondary-color) !important;
-  color: var(--theme-primary-color) !important;
-  border: 1px solid var(--theme-secondary-color) !important;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  border-radius: 8px;
-  padding: 12px;
-}
-
-.btn-submit:hover {
-  background-color: var(--theme-primary-color) !important;
-  color: var(--theme-secondary-color) !important;
-  border: 1px solid var(--theme-primary-color) !important;
-}
-
-.wpcf7-form-control-wrap {
-  margin-bottom: 12px;
-  display: block;
-}
-
 .themesflat-shortcode-socials {
   display: flex;
   flex-wrap: wrap;
@@ -11516,4 +11452,73 @@ button:hover {
 .footer .wrap-widgets-1 #block-20 .wp-block-group__inner-container {
   display: inline-flex;
   gap: 85px;
+}
+
+/* form */
+.form-appointment input,
+.form-appointment select,
+.form-appointment textarea {
+  border: 1px solid #eeefef;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666b68 !important;
+  line-height: 22px;
+  padding: 19px 30px 17px 46px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.form-appointment textarea {
+  height: 90px;
+}
+.form-appointment input::placeholder,
+.form-appointment select::placeholder,
+.form-appointment textarea::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666b68;
+  line-height: 22px;
+}
+.form-appointment input:focus,
+.form-appointment select:focus,
+.form-appointment textarea:focus {
+  border: 1px solid rgba(12, 23, 26, 0.1) !important;
+  background-color: #eef0f2;
+}
+.form-appointment .inner-form {
+  position: relative;
+  width: 100%;
+}
+.form-appointment .group-inner {
+  display: flex;
+  gap: 30px;
+}
+.form-appointment .group-inner.form-bottom .inner-form:last-child {
+  width: 46%;
+}
+.form-appointment span {
+  margin-bottom: 20px;
+  display: block;
+}
+.form-appointment .inner-form i {
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  color: #666b68;
+  z-index: 1;
+}
+.form-appointment input[type="submit"] {
+  background-color: var(--theme-secondary-color) !important;
+  font-weight: 700;
+  color: #fff !important;
+}
+.form-appointment input[type="submit"]:hover {
+  background-color: var(--theme-accent-color) !important;
+  color: #fff !important;
 }

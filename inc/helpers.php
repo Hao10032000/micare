@@ -315,10 +315,7 @@ add_filter( 'excerpt_length', 'themesflat_excerpt_length', 999 );
  * Blog layout
  */
 function themesflat_blog_layout() {  
-    $services_layout = themesflat_get_opt('services_layout');
-    if (themesflat_get_opt_elementor('services_layout') != '') {
-        $services_layout = themesflat_get_opt_elementor('services_layout');
-    }  
+
     switch (get_post_type()) {
         case 'page':
             $layout = themesflat_get_opt_elementor('page_sidebar_layout');   
@@ -330,7 +327,7 @@ function themesflat_blog_layout() {
             $layout = themesflat_get_opt('case_study_layout');
             break;
         case 'services':
-            $layout = $services_layout;
+            $layout = themesflat_get_opt('services_layout');
             break;
         default:
             $layout = themesflat_get_opt('page_sidebar_layout');
