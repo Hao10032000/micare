@@ -192,8 +192,8 @@ function themesflat_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => esc_html__( 'Case Study Sidebar', 'micare' ),
-        'id'            => 'themesflat-custom-sidebar-case-studysidebar',
+        'name'          => esc_html__( 'Portfolio Sidebar', 'micare' ),
+        'id'            => 'themesflat-custom-sidebar-portfoliosidebar',
         'description'   => esc_html__( 'Add widgets here to appear in your sidebar toggler.', 'micare' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',

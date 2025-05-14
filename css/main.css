@@ -11492,12 +11492,16 @@ button:hover {
   background-color: #eef0f2;
 }
 .form-appointment .inner-form {
-  position: relative;
-  width: 100%;
+     position: relative;
+    width: calc(35% - 30px);
+}
+.form-appointment .inner-form.textara {
+    width: calc(69% - 30px);
 }
 .form-appointment .group-inner {
-  display: flex;
-  gap: 30px;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .form-appointment .group-inner.form-bottom .inner-form:last-child {
   width: 46%;
@@ -11521,4 +11525,33 @@ button:hover {
 .form-appointment input[type="submit"]:hover {
   background-color: var(--theme-accent-color) !important;
   color: #fff !important;
+}
+.home2 .form-appointment .inner-form {
+    position: relative;
+    width: calc(54% - 30px);
+}
+.home2 .form-appointment input, .home2 .form-appointment select, .home2 .form-appointment textarea {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff !important;
+}
+.home2 .form-appointment input::placeholder,
+.home2 .form-appointment select::placeholder,
+.home2 .form-appointment textarea::placeholder,
+.home2 .form-appointment .inner-form i {
+  color: #fff;
+}
+.home2 .form-appointment textarea {
+    height: 130px;
+}
+.home2 .form-appointment .inner-form.textara {
+      width: 100%;
+}
+.home2 .form-appointment input[type="submit"] {
+    background-color: #FFFFFF !important;
+    margin-top: -14px;
+    color: #4B168C !important;
+}
+.home2 .form-appointment .inner-form i {
+    left: 24px;
 }

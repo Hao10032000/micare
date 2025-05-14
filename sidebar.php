@@ -14,8 +14,11 @@
 	if( 'services' == get_post_type() ){
 		$sidebar = themesflat_get_opt( 'services_sidebar_list' );
 	}
-	if( 'case-study' == get_post_type() ){
-		$sidebar = themesflat_get_opt( 'case_study_sidebar_list' );
+	if( 'doctor' == get_post_type() ){
+		$sidebar = themesflat_get_opt( 'doctor_sidebar_list' );
+	}
+	if( 'portfolio' == get_post_type() ){
+		$sidebar = themesflat_get_opt( 'portfolio_sidebar_list' );
 	}
 	if ( is_search() ) {			
 		$sidebar = themesflat_get_opt( 'blog_sidebar_list' );			
