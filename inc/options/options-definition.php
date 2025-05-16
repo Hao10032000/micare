@@ -338,6 +338,7 @@ function themesflat_customize_default($key) {
 			'line_height'=>'22px',
 			'letter_spacing' => '',
 		),
+	
 		'bottom_background_color'	=> '#0C171A',
 		'bottom_text_color'			=> '#A2A3AB',
 		'bottom_link_color'         => '#ffffff',

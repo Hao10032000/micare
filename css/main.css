@@ -1134,6 +1134,13 @@ ul.wp-block-rss li {
   border-radius: 15px;
   box-shadow: 10px 4px 60px 0px rgba(217, 217, 217, 0.25);
 }
+#header.header-01 .header-wrap {
+    padding: 4px 40px 6px 38px;
+}
+.class-name-page-health-care .themesflat-top.style-01 {
+    padding-left: 48px;
+    padding-right: 48px;
+}
 #header.header-default.header-01 .header-wrap,
 #header.header-default.header-02 .header-wrap {
   border: 1px solid transparent;
@@ -1152,12 +1159,17 @@ ul.wp-block-rss li {
 }
 #header.header-02 {
   background-color: transparent;
-  padding: 18px 25px;
+  padding: 29px 18px 15px 18px;
 }
 #header.header-02 .header-wrap .header-ct-right .header-modal-menu-left-btn i {
-  background-color: #ffffff;
-  padding: 18px 13px;
-  border-radius: 100px;
+    background-color: #ffffff;
+    padding: 17px 13px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 800;
+}
+#header.header-02 .header-wrap .header-ct-right .header-modal-menu-left-btn i:hover {
+    background-color: #EFD813;
 }
 #header.header-02 .header-modal-menu-left-btn {
   margin-left: 10px;
@@ -11554,4 +11566,58 @@ button:hover {
 }
 .home2 .form-appointment .inner-form i {
     left: 24px;
+}
+.text-h3 .tf-list-image .list-text a .text {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-h4 .tf-list-image .list-text a .text {
+    background: -webkit-linear-gradient(rgba(23, 23, 23, 0.05), rgba(23, 23, 23, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-appointment.checkup .inner-form {
+    position: relative;
+    width: calc(53% - 30px);
+}
+.form-appointment.checkup .inner-form.form-btn {
+    width: 50%;
+}
+.form-appointment.checkup .inner-form svg {
+    position: absolute;
+    color: #666b68;
+    z-index: 1;
+}
+.form-appointment.checkup .inner-form svg,
+.form-appointment .inner-form i {
+    left: 20px;
+    top: 18px;
+}
+.form-appointment.checkup input, .form-appointment.checkup select, .form-appointment.checkup textarea {
+    border: 1px solid #EBEDFF;
+    background-color: rgba(239, 248, 250, 1);
+        padding: 15px 30px 13px 46px;
+}
+.form-appointment.checkup input:focus,
+.form-appointment.checkup select:focus,
+.form-appointment.checkup textarea:focus {
+  border: 1px solid #171717 !important;
+  background-color: #FFFFFF;
+}
+.form-appointment.checkup input[type="submit"] {
+       background-color: #FFEC21 !important;
+    color: #0C171A !important;
+    padding: 14px 66px 15px 41px;
+    font-size: 16px;
+    width: auto;
+}
+.form-appointment.checkup input[type="submit"]:hover {
+    background-color: #EBEDFF !important;
+}
+.form-appointment.checkup .inner-form.form-btn i {
+    font-size: 20px;
+    color: #0C171A;
+        left: 60%;
+    top: 16px;
 }
