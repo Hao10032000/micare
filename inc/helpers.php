@@ -1067,8 +1067,6 @@ function themesflat_get_page_titles() {
                 $title = themesflat_get_opt('doctor_featured_title');
             } elseif(is_single() && get_post_type() == 'portfolio' && themesflat_get_opt('portfolio_featured_title') != ''){                
                 $title = themesflat_get_opt('portfolio_featured_title');
-            } elseif(is_single() && get_post_type() == 'product' && themesflat_get_opt('product_featured_title') != ''){
-                $title = themesflat_get_opt('product_featured_title');
             }
         }
     } else {

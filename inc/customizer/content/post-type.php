@@ -106,29 +106,6 @@ if (function_exists('themesflat_register_services_post_type')) {
         )
     );
 
-    // Gird columns therapists
-    $wp_customize->add_setting(
-        'services_grid_columns',
-        array(
-            'default'           => themesflat_customize_default('services_grid_columns'),
-            'sanitize_callback' => 'esc_attr',
-        )
-    );
-    $wp_customize->add_control(
-        'services_grid_columns',
-        array(
-            'type'      => 'select',           
-            'section'   => 'section_content_post_type',
-            'priority'  => 28,
-            'label'     => esc_html('Grid Columns', 'micare'),
-            'choices'   => array(
-                2     => esc_html( '2 Columns', 'micare' ),
-                3     => esc_html( '3 Columns', 'micare' ),
-                4     => esc_html( '4 Columns', 'micare' )
-            )
-        )
-    );    
-
     // Order By services
     $wp_customize->add_setting(
         'services_order_by',
@@ -196,41 +173,6 @@ if (function_exists('themesflat_register_services_post_type')) {
         )
     );
 
-    // Show filter services
-    $wp_customize->add_setting (
-        'services_show_filter',
-        array (
-            'sanitize_callback' => 'themesflat_sanitize_checkbox',
-            'default' => themesflat_customize_default('services_show_filter'),     
-        )
-    );
-    $wp_customize->add_control( new themesflat_Checkbox( $wp_customize,
-        'services_show_filter',
-        array(
-            'type'      => 'checkbox',
-            'label'     => esc_html__('Filter ( OFF | ON )', 'micare'),
-            'section'   => 'section_content_post_type',
-            'priority'  => 33
-        ))
-    );
-
-    // Filter Categories Order
-    $wp_customize->add_setting (
-        'services_filter_category_order',
-        array(
-            'default' =>  themesflat_customize_default('services_filter_category_order'),
-            'sanitize_callback' => 'themesflat_sanitize_text'
-        )
-    );
-    $wp_customize->add_control(
-        'services_filter_category_order',
-        array(
-            'type'      => 'text',
-            'label'     => esc_html('Filter Slug Categories Order Split By ","', 'micare'),
-            'section'   => 'section_content_post_type',
-            'priority'  => 34
-        )
-    ); 
 
     /* Services Single 
     ==============================================*/  
@@ -242,19 +184,6 @@ if (function_exists('themesflat_register_services_post_type')) {
         ) )
     ); 
 
-    $wp_customize->add_control( 
-        'services_single_style',
-        array (
-            'type'      => 'select',           
-            'section'   => 'section_content_post_type',
-            'priority'  => 40,
-            'label'         => esc_html__('Sidebar Position', 'micare'),
-            'choices'   => array (
-                'default'     => esc_html__( 'Default','micare' ),
-                'top-widget'      =>  esc_html__( 'Top Widget Services Sidebar','micare' ),
-            ),
-        )
-    );
 
     // Customize Services Featured Title
     $wp_customize->add_setting (
@@ -292,81 +221,333 @@ if (function_exists('themesflat_register_services_post_type')) {
          ))
      ); 
 
-    // Show Post Navigator services
-    $wp_customize->add_setting (
-        'services_show_post_navigator',
-        array (
-            'sanitize_callback' => 'themesflat_sanitize_checkbox',
-            'default' => themesflat_customize_default('services_show_post_navigator'),     
-        )
-    );
-    $wp_customize->add_control( new themesflat_Checkbox( $wp_customize,
-        'services_show_post_navigator',
-        array(
-            'type'      => 'checkbox',
-            'label'     => esc_html__('Single Navigator ( OFF | ON )', 'micare'),
-            'section'   => 'section_content_post_type',
-            'priority'  => 41
-        ))
-    );  
+}
 
-    // Show Related services
-    $wp_customize->add_setting (
-        'services_show_related',
-        array (
-            'sanitize_callback' => 'themesflat_sanitize_checkbox',
-            'default' => themesflat_customize_default('services_show_related'),     
-        )
-    );
-    $wp_customize->add_control( new themesflat_Checkbox( $wp_customize,
-        'services_show_related',
-        array(
-            'type'      => 'checkbox',
-            'label'     => esc_html__('Related Services ( OFF | ON )', 'micare'),
-            'section'   => 'section_content_post_type',
-            'priority'  => 42
-        ))
+if (function_exists('themesflat_register_doctor_post_type')) {
+
+    /* doctor Archive 
+    ===============================================*/ 
+    $wp_customize->add_control( new themesflat_Info( $wp_customize, 'doctor', array(
+        'label' => esc_html__('DOCTOR ARCHIVE', 'micare'),
+        'section' => 'section_content_post_type',
+        'settings' => 'themesflat_options[info]',
+        'priority' => 42
+        ) )
     );
 
-    // Number Of Related Posts Service
+    // doctor Slug
     $wp_customize->add_setting (
-        'number_related_post_services',
+        'doctor_slug',
         array(
-            'default' => themesflat_customize_default('number_related_post_services'),
+            'default' =>  themesflat_customize_default('doctor_slug'),
             'sanitize_callback' => 'themesflat_sanitize_text'
         )
     );
     $wp_customize->add_control(
-        'number_related_post_services',
+        'doctor_slug',
         array(
             'type'      => 'text',
-            'label'     => esc_html__('Number Of Related Posts', 'micare'),
+            'label'     => esc_html('Doctor Slug', 'micare'),
             'section'   => 'section_content_post_type',
-            'priority'  => 42
+            'priority'  => 43
+        )
+    );  
+
+    // doctor Name
+    $wp_customize->add_setting (
+        'doctor_name',
+        array(
+            'default' =>  themesflat_customize_default('doctor_name'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'doctor_name',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html('Doctor Name', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 44
         )
     );
 
-    // Gird columns services related
-    $wp_customize->add_setting(
-        'services_related_grid_columns',
+
+    // Number Posts therapists
+    $wp_customize->add_setting (
+        'doctor_number_post',
         array(
-            'default'           => themesflat_customize_default('services_related_grid_columns'),
+            'default' => themesflat_customize_default('doctor_number_post'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'doctor_number_post',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html__('Show Number Posts', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 45
+        )
+    );
+
+    // Order By doctor
+    $wp_customize->add_setting(
+        'doctor_order_by',
+        array(
+            'default' => themesflat_customize_default('doctor_order_by'),
             'sanitize_callback' => 'esc_attr',
         )
     );
     $wp_customize->add_control(
-        'services_related_grid_columns',
+        'doctor_order_by',
         array(
-            'type'      => 'select',           
+            'type'      => 'select',
+            'label'     => esc_html('Order By', 'micare'),
             'section'   => 'section_content_post_type',
-            'priority'  => 43,
-            'label'     => esc_html__('Columns Related', 'micare'),
-            'choices'   => array(
-                2     => esc_html__( '2 Columns', 'micare' ),
-                3     => esc_html__( '3 Columns', 'micare' ),
-                4     => esc_html__( '4 Columns', 'micare' )
-            )
+            'priority'  => 46,
+            'choices' => array(
+                'date'          => esc_html( 'Date', 'micare' ),
+                'id'            => esc_html( 'Id', 'micare' ),
+                'author'        => esc_html( 'Author', 'micare' ),
+                'title'         => esc_html( 'Title', 'micare' ),
+                'modified'      => esc_html( 'Modified', 'micare' ),
+                'comment_count' => esc_html( 'Comment Count', 'micare' ),
+                'menu_order'    => esc_html( 'Menu Order', 'micare' )
+            )        
         )
+    );
+
+    // Order Direction doctor
+    $wp_customize->add_setting(
+        'doctor_order_direction',
+        array(
+            'default' => themesflat_customize_default('doctor_order_direction'),
+            'sanitize_callback' => 'esc_attr',
+        )
+    );
+    $wp_customize->add_control(
+        'doctor_order_direction',
+        array(
+            'type'      => 'select',
+            'label'     => esc_html('Order Direction', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 47,
+            'choices' => array(
+                'DESC' => esc_html( 'Descending', 'micare' ),
+                'ASC'  => esc_html( 'Assending', 'micare' )
+            )        
+        )
+    );
+
+    // doctor Exclude Post
+    $wp_customize->add_setting (
+        'doctor_exclude',
+        array(
+            'default' =>  themesflat_customize_default('doctor_exclude'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'doctor_exclude',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html('Post Ids Will Be Inorged. Ex: 1,2,3', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 48
+        )
+    );
+
+
+    /* doctor Single 
+    ==============================================*/  
+    $wp_customize->add_control( new themesflat_Info( $wp_customize, 'doctorsingle', array(
+        'label' => esc_html__('DOCTOR SINGLE', 'micare'),
+        'section' => 'section_content_post_type',
+        'settings' => 'themesflat_options[info]',
+        'priority' => 49
+        ) )
     ); 
+
+
+    $wp_customize->add_setting (
+        'doctor_featured_title',
+        array(
+            'default' => themesflat_customize_default('doctor_featured_title'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'doctor_featured_title',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html__('Customize Doctor Featured Title', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 50
+        )
+    );
+}
+
+if (function_exists('themesflat_register_portfolio_post_type')) {
+
+    /* portfolio Archive 
+    ===============================================*/ 
+    $wp_customize->add_control( new themesflat_Info( $wp_customize, 'portfolio', array(
+        'label' => esc_html__('PORTFOLIO ARCHIVE', 'micare'),
+        'section' => 'section_content_post_type',
+        'settings' => 'themesflat_options[info]',
+        'priority' => 51
+        ) )
+    );
+
+    // portfolio Slug
+    $wp_customize->add_setting (
+        'portfolio_slug',
+        array(
+            'default' =>  themesflat_customize_default('portfolio_slug'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_slug',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html('Portfolio Slug', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 52
+        )
+    );  
+
+    // portfolio Name
+    $wp_customize->add_setting (
+        'portfolio_name',
+        array(
+            'default' =>  themesflat_customize_default('portfolio_name'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_name',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html('Portfolio Name', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 53
+        )
+    );
+
+    // Number Posts therapists
+    $wp_customize->add_setting (
+        'portfolio_number_post',
+        array(
+            'default' => themesflat_customize_default('portfolio_number_post'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_number_post',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html__('Show Number Posts', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 56
+        )
+    );
+
+    // Order By portfolio
+    $wp_customize->add_setting(
+        'portfolio_order_by',
+        array(
+            'default' => themesflat_customize_default('portfolio_order_by'),
+            'sanitize_callback' => 'esc_attr',
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_order_by',
+        array(
+            'type'      => 'select',
+            'label'     => esc_html('Order By', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 57,
+            'choices' => array(
+                'date'          => esc_html( 'Date', 'micare' ),
+                'id'            => esc_html( 'Id', 'micare' ),
+                'author'        => esc_html( 'Author', 'micare' ),
+                'title'         => esc_html( 'Title', 'micare' ),
+                'modified'      => esc_html( 'Modified', 'micare' ),
+                'comment_count' => esc_html( 'Comment Count', 'micare' ),
+                'menu_order'    => esc_html( 'Menu Order', 'micare' )
+            )        
+        )
+    );
+
+    // Order Direction portfolio
+    $wp_customize->add_setting(
+        'portfolio_order_direction',
+        array(
+            'default' => themesflat_customize_default('portfolio_order_direction'),
+            'sanitize_callback' => 'esc_attr',
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_order_direction',
+        array(
+            'type'      => 'select',
+            'label'     => esc_html('Order Direction', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 58,
+            'choices' => array(
+                'DESC' => esc_html( 'Descending', 'micare' ),
+                'ASC'  => esc_html( 'Assending', 'micare' )
+            )        
+        )
+    );
+
+    // portfolio Exclude Post
+    $wp_customize->add_setting (
+        'portfolio_exclude',
+        array(
+            'default' =>  themesflat_customize_default('portfolio_exclude'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_exclude',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html('Post Ids Will Be Inorged. Ex: 1,2,3', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 59
+        )
+    );
+
+
+    /* portfolio Single 
+    ==============================================*/  
+    $wp_customize->add_control( new themesflat_Info( $wp_customize, 'portfoliosingle', array(
+        'label' => esc_html__('portfolio SINGLE', 'micare'),
+        'section' => 'section_content_post_type',
+        'settings' => 'themesflat_options[info]',
+        'priority' => 60
+        ) )
+    ); 
+
+
+    // Customize portfolio Featured Title
+    $wp_customize->add_setting (
+        'portfolio_featured_title',
+        array(
+            'default' => themesflat_customize_default('portfolio_featured_title'),
+            'sanitize_callback' => 'themesflat_sanitize_text'
+        )
+    );
+    $wp_customize->add_control(
+        'portfolio_featured_title',
+        array(
+            'type'      => 'text',
+            'label'     => esc_html__('Customize portfolio Featured Title', 'micare'),
+            'section'   => 'section_content_post_type',
+            'priority'  => 61
+        )
+    );
 
 }
