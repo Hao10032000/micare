@@ -11736,3 +11736,45 @@ button:hover {
 .appointment .form-appointment .textara span {
     margin-bottom: 6px;
 }
+.form-appointment.contact .inner-form,
+.form-appointment.contact .inner-form.textara {
+    width: 100% !important;
+}
+.form-appointment.contact input, .form-appointment.contact select, .form-appointment.contact textarea {
+   background-color: #EEF0F2;
+   padding: 19px 30px 17px 55px;
+
+}
+.form-appointment.contact .inner-form i {
+    left: 32px;
+}
+.form-appointment.contact textarea {
+    height: 130px;
+}
+.form-appointment.contact .inner-form.form-btn i {
+
+    left: 59%;
+        top: 22px;
+}
+.form-appointment.contact input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    padding: 0 !important;
+    background: #fff !important;
+}
+.form-appointment.contact .wpcf7-radio label {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.form-appointment.contact .wpcf7-radio label span {
+    margin-bottom: 0px;
+
+}
+.form-appointment.contact .wpcf7-radio {
+  
+    margin-top: -8px;
+    margin-left: -17px;
+    margin-bottom: 28px;
+
+}
