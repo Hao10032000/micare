@@ -84,9 +84,9 @@ $header_button_url = themesflat_get_opt('header_button_url');
             </nav><!-- #mainnav_canvas -->
             <?php if( $topbar_address2 != '' ): ?>
                 <div class="infor-topbar">
-                <span class="list"><?php echo wp_kses_post($topbar_address2); ?></span>
-                <span class="list"><?php echo wp_kses_post($topbar_address3); ?></span>
-                <span class="list"><?php echo wp_kses_post($topbar_address4); ?></span>
+                <div class="list"><?php echo wp_kses_post($topbar_address2); ?></div>
+                <div class="list"><?php echo wp_kses_post($topbar_address3); ?></div>
+                <div class="list"><?php echo wp_kses_post($topbar_address4); ?></div>
                 </div>
             <?php endif; ?>
             <?php if ( $social_topbar == 1 ):

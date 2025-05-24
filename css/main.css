@@ -1694,6 +1694,7 @@ header .flat-information li a {
   position: relative;
   color: #fff;
   border: unset;
+  display: inline-block;
 }
 
 .tf-btn:hover {
@@ -1885,6 +1886,7 @@ header .flat-information li a {
 
 .infor-topbar .list i {
   margin-right: 8px;
+      color: #666B68;
 }
 
 .themesflat-top.style-01 {
@@ -2377,7 +2379,7 @@ footer .widget.widget_nav_menu ul li a:hover {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   position: fixed;
-  background-color: var(--theme-primary-color);
+  background-color: #fff;
   z-index: 999999;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -2473,13 +2475,18 @@ footer .widget.widget_nav_menu ul li a:hover {
 #mainnav_canvas ul.menu>li {
   width: 100%;
   position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #EEEFEF;
 }
 
 #mainnav_canvas>ul>li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #EEEFEF;
 }
-
+#mainnav_canvas ul>li {
+    position: relative;
+}
+.mainnav_canvas .current-menu-parent .menu-item-has-children .btn-submenu {
+    right: -15px;
+}
 #mainnav_canvas ul>li:last-child {
   border-bottom: 1px solid transparent;
 }
@@ -2491,7 +2498,7 @@ footer .widget.widget_nav_menu ul li a:hover {
   width: 100%;
   height: auto;
   padding: 8px 50px 8px 0px;
-  color: #fff;
+  color: var(--theme-primary-color);
 }
 
 #mainnav_canvas ul li a>span {
@@ -2504,10 +2511,6 @@ footer .widget.widget_nav_menu ul li a:hover {
 
 #mainnav_canvas .sub-menu a {
   padding: 8px 20px 8px 0px;
-}
-
-#mainnav_canvas .sub-menu .sub-menu a {
-  padding: 12px 50px 12px 45px;
 }
 
 #mainnav_canvas>ul>li:last-child {
@@ -2907,7 +2910,7 @@ header .block a {
 .btn-menu span,
 .btn-menu:after,
 .btn-menu:before {
-  background-color: #fff;
+  background-color: var(--theme-primary-color);
   -webkit-transition: 238ms;
   -moz-transition: 238ms;
   transition: 238ms;
@@ -2924,7 +2927,7 @@ header .block a {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  background-color: #fff !important;
+  background-color: var(--theme-primary-color) !important;
 }
 
 .btn-menu span {
@@ -2935,7 +2938,7 @@ header .block a {
   top: 50%;
   overflow: hidden;
   text-indent: 200%;
-  background-color: #fff !important;
+  background-color: var(--theme-primary-color) !important;
 }
 
 .btn-menu span.line-1 {
@@ -2989,7 +2992,7 @@ header .block a {
   display: inline-block;
   border-style: solid;
   border-width: 0 1px 1px 0;
-  border-color: transparent #fff #fff transparent;
+  border-color: transparent var(--theme-primary-color) var(--theme-primary-color) transparent;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -5398,11 +5401,6 @@ footer .widget.widget_nav_menu .menu>li li :last-child {
   line-height: 1.5;
 }
 
-.btn-menu:before,
-.btn-menu:after,
-.btn-menu span {
-  background: #317c6f !important;
-}
 
 .post-password-form input[type="submit"] {
   padding: 15px 57px;
@@ -6856,7 +6854,9 @@ footer .wp-block-search .wp-block-search__label {
 .footer-widgets .wrap-widgets-1 .widget {
   margin-bottom: 15px;
 }
-
+.footer-widgets .wrap-widgets-1 #block-20 {
+    margin-top: 71px;
+}
 #footer .wrap-widgets-1 .footer-info li {
   font-size: 16px;
   font-weight: 400;
@@ -7233,7 +7233,7 @@ footer .widget.widget_product_categories ul>li>a:hover:before {
   gap: 50px;
   align-items: center;
   padding: 0px 0 98px 0;
-  margin-top: -16px;
+    margin-top: -7px;
 }
 
 .bottom ul li {
@@ -9692,21 +9692,16 @@ button:hover {
 }
 
 .canvas-nav-wrap .infor-topbar .list {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 7px;
-  text-align: left;
+      color: #666B68;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    display: flex
+;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
 }
-
-.canvas-nav-wrap .infor-topbar .list:first-child i {
-  font-size: 20px;
-}
-
 .canvas-nav-wrap .themesflat-socials {
   display: flex;
   display: -webkit-box;
@@ -9719,11 +9714,11 @@ button:hover {
 
 .canvas-nav-wrap .themesflat-socials li {
   background: 0 0;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .canvas-nav-wrap .themesflat-socials li a {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--theme-primary-color);
 }
 
@@ -11347,7 +11342,8 @@ button:hover {
   padding: 27px 40px 20px 39px;
 }
 
-.sidebar .widget {
+.blog .sidebar .widget,
+.single-post .sidebar .widget{
   padding: 30px;
   border: 1px solid #eeefef;
   border-radius: 7px;
@@ -11367,6 +11363,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 51px 30px 47px 49px;
+      border-radius: 10px;
 }
 
 .custom-siderbar .sub-title {
@@ -11508,6 +11505,7 @@ button:hover {
   background-color: var(--theme-secondary-color) !important;
   font-weight: 700;
   color: #fff !important;
+  padding: 17px 50px 17px 30px;
 }
 
 .form-appointment input[type="submit"]:hover {
@@ -11580,8 +11578,7 @@ button:hover {
   z-index: 1;
 }
 
-.form-appointment.checkup .inner-form svg,
-.form-appointment .inner-form i {
+.form-appointment.checkup .inner-form svg {
   left: 20px;
   top: 18px;
 }
@@ -11619,6 +11616,12 @@ button:hover {
   left: 60%;
   top: 16px;
 }
+.form-appointment .inner-form.form-btn i {
+     font-size: 20px;
+    color: #fff;
+    left: 60%;
+    top: 19px;
+}
 
 .img-absolute {
   position: relative;
@@ -11638,10 +11641,98 @@ button:hover {
     top: -40px;
 }
 .img-absolute.two::before {
-right: -25px;
+    right: -25px;
     bottom: -35px;
 }
 .img-absolute img {
   z-index: 1;
   position: relative;
+}
+.form-appointment.event .inner-form {
+    position: relative;
+    width: 100%;
+}
+.form-appointment.event .group-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.appointment .form-appointment input,
+.appointment .form-appointment select,
+.appointment .form-appointment textarea,
+.form-appointment.event input,
+.form-appointment.event select,
+.form-appointment.event textarea {
+    border-radius: 10px;
+    color: #0C171A !important;
+}
+.form-appointment.event i,
+.form-appointment.event svg,
+.form-appointment.event input::placeholder,
+ .form-appointment.event select::placeholder,
+  .form-appointment.event textarea::placeholder
+ .appointment .form-appointment input::placeholder,
+ .appointment .form-appointment select::placeholder,
+  .appointment .form-appointment textarea::placeholder {
+    color: #0C171A !important;
+}
+.form-appointment.event svg {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+.form-appointment .inner-form.form-btn {
+    width: fit-content !important;
+}
+.appointment .form-appointment .inner-form.form-btn {
+  width: 43% !important;
+}
+.form-appointment.event span {
+    margin-bottom: 10px;
+    display: block;
+}
+.form-appointment.event input[type="submit"],
+.appointment .form-appointment input[type="submit"] {
+    background-color: var(--theme-secondary-color) !important;
+    font-weight: 700;
+    color: #fff !important;
+    padding: 17px 85px 17px 41px;
+    border-radius: 30px;
+}
+.form-appointment.event input[type="submit"]:hover,
+.appointment .form-appointment input[type="submit"]:hover {
+    background-color: var(--theme-primary-color) !important;
+}
+.form-appointment.event textarea {
+    height: 134px;
+}
+.form-appointment.event .inner-form.form-btn i {
+    font-size: 20px;
+    color: #fff !important;
+    left: 70%;
+    top: 19px;
+}
+.form-appointment.doctor .group-inner {
+    gap: 30px;
+}
+.form-appointment.doctor span {
+    margin-bottom: 28px;
+}
+.form-appointment.doctor .textara span {
+    margin-bottom: 11px;
+}
+.appointment .form-appointment .inner-form {
+    position: relative;
+    width: calc(50% - 15px);
+}
+.appointment .form-appointment .textara {
+    width: 100%;
+}
+.appointment .form-appointment textarea {
+    height: 130px;
+}
+.appointment .form-appointment .textara span {
+    margin-bottom: 6px;
 }

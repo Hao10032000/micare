@@ -13,7 +13,7 @@ if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_
                 foreach ($columns as $key => $column) {
                             $key = $key +1;
                             ?>
-                <div class="col-lg-<?php  echo esc_attr($column);?> col-sm-6 widgets-areas">
+                <div class="col-lg-<?php  echo esc_attr($column);?> col-md-12 widgets-areas">
                     <div class="wrap-widgets-<?php  echo esc_attr($key);?>">
                         <?php                                         
                                 $widget = themesflat_get_opt("footer".$key);
